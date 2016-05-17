@@ -39,20 +39,30 @@ lineReader.on('close', function() {
 });
 
 function addCitations(fromId, citations, graph) {
+  if (!fromId) throw new Error('No from id?');
+
+  if (!graph.getNode(fromId)) {
+    graph.addNode(fromId);
+  }
   citations.forEach(function(citation) {
-    graph.addLink(fromId, citation);
+    if (citation) graph.addLink(fromId, citation);
   });
 }
 
 function addAuthors(authors, graph) {
   authors.forEach(function(author) {
-    graph.addNode(author);
+    if (author) graph.addNode(author);
   });
 
   for (var i = 0; i < authors.length; ++i) {
+    var from = authors[i];
+    if (!from) continue;
+
     for (var j = i + 1; j < authors.length; ++j) {
-      if (i !== j && !graph.hasLink(authors[i], authors[j])) {
-        graph.addLink(authors[i], authors[j]);
+      var to = authors[j];
+      if (!to) continue;
+      if (i !== j && !graph.hasLink(from, to)) {
+        graph.addLink(from, to);
       }
     }
   }
