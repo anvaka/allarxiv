@@ -11,5 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/anvaka/allarxive"
+  },
+  "dependencies": {
+    "ngraph.graph": "0.0.12",
+    "ngraph.tobinary": "^1.0.1"
   }
 }
