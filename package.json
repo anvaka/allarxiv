@@ -1,0 +1,15 @@
+{
+  "name": "allarxive",
+  "version": "1.0.0",
+  "description": "Transforms data from paperscape to ngraph so that it can be used in PM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrei Kashcha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anvaka/allarxive"
+  }
+}
