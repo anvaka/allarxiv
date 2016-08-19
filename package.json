@@ -1,5 +1,5 @@
 {
-  "name": "allarxive",
+  "name": "allarxiv",
   "version": "1.0.0",
   "description": "Transforms data from paperscape to ngraph so that it can be used in PM",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anvaka/allarxive"
+    "url": "https://github.com/anvaka/allarxiv"
   },
   "dependencies": {
     "ngraph.graph": "0.0.12",

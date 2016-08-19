@@ -1,4 +1,4 @@
-# allarxive
+# allarxiv
 
 Transforms data from [paperscape](http://paperscape.org/) to ngraph so that it can be used in [PM](http://anvaka.github.io/pm/#/)
 
